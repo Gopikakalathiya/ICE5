@@ -41,7 +41,5 @@ public class PizzaShop {
         {
             System.out.println("Enter a valid pizza type so we can cut it next time!");
         }
-        
     }//end main
-    
 }
