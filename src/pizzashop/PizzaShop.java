@@ -13,7 +13,7 @@ import java.util.Scanner;
  * Note that the following source was used as a reference in 
  * creating this example:
  * Freeman, E.Freeman, E., Sierra, K., & Bates, B. (2004). Head First Design patterns. Sebastopol, CA: O'Reilly.
- * @author dancye, 2019
+ * @author Gopika Kalathiya
  */
 public class PizzaShop {
 
@@ -31,7 +31,8 @@ public class PizzaShop {
         Pizza pizza = pf.createPizza(type);
         System.out.println("how many slices would you like?");
         int numSlices = sc.nextInt();
-        pizzaCutter.numSlices = numSlices;
+        PizzaCutter p1 = PizzaCutter.getInstance();
+        p1.numSlices = numSlices;
         if (pizza!=null)
         {
             System.out.println("Great job, here is your pizza in " + numSlices + " slices");

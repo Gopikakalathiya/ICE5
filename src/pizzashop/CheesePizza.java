@@ -6,7 +6,7 @@ package pizzashop;
  * Note that the following source was used as a reference in 
  * creating this example:
  * Freeman, E.Freeman, E., Sierra, K., & Bates, B. (2004). Head First Design patterns. Sebastopol, CA: O'Reilly.
- * @author dancye
+ * @author Gopika Kalathiya
  */
 public class CheesePizza extends Pizza
 {
@@ -15,6 +15,7 @@ public class CheesePizza extends Pizza
         super();
         super.addTopping("cheese");
     }
+    @Override
     public void bake(int temp)
     {
         super.bakeTemp = temp;
